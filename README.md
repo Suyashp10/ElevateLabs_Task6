@@ -6,21 +6,8 @@ The goal of this task was to understand what makes a password strong and how pas
 ---
 
 ## 🛠 Tools Used
-- [PasswordMeter](https://www.passwordmeter.com/)
-- [NordPass Password Strength Checker](https://nordpass.com/password-strength-checker/)
-- [whatismyipaddress.com](https://whatismyipaddress.com/) (used in next tasks)
+- [PasswordMeter]([https://www.passwordmonster.com/])
 - Manual analysis
-
----
-
-## 📂 Files Included
-```
-.
-├── README.md
-├── passwords.txt                 # Sample passwords tested
-├── evaluation_results.csv        # Password analysis and feedback
-└── screenshots/                  # Screenshots of password strength results
-```
 
 ---
 
@@ -28,11 +15,13 @@ The goal of this task was to understand what makes a password strong and how pas
 
 | Password       | Complexity   | Strength (%) | Notes                                |
 |----------------|--------------|--------------|--------------------------------------|
-| `h3ll0123`      | Medium       | 55%          | Lowercase with numbers               |
-| `suyash`        | Weak         | 30%          | Simple name, all lowercase           |
+| `h3ll0123`     | Medium       | 55%          | Lowercase with numbers               |
+| `suyash`       | Weak         | 30%          | Simple name, all lowercase           |
 | `h3\0_123`     | Medium-High  | 65%          | Symbols, numbers, but no uppercase   |
-| `Suyash`        | Weak         | 35%          | Capitalized name, no complexity      |
+| `Suyash`       | Medium       | 50%          | Capitalized name, no complexity      |
 | `[-]3\0_123`   | Strong       | 80%          | Complex use of symbols & numbers     |
+| `Suyash`       | Strong       | 75%          | Capitalized name, minor complexity   |
+|                |              |              | with addition of a comma             |
 
 📸 Screenshots available in the `screenshots/` folder.
 
@@ -57,9 +46,3 @@ The goal of this task was to understand what makes a password strong and how pas
 
 ## 📸 Screenshots
 All evaluation screenshots are stored in the `/screenshots` folder and named corresponding to the tested passwords.
-
----
-
-## ✅ Status
-✅ Task completed successfully.  
-🗃️ Submitted via GitHub as part of Elevate Labs Cyber Security Internship.
